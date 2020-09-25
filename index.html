@@ -5,19 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/slick-theme.css" rel="stylesheet">
     <link href="css/fontawesome/css/all.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>My First Bootstrap Page</h1>
-        <p>This is some text.</p>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand d-n logo-desktop" href="#">
+            <img class="logo-png" src="img/zanapoliodvaras_logo_[png].png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Produktai
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Skani dovana</a>
+                        <a class="dropdown-item" href="#">Žuvis</a>
+                        <a class="dropdown-item" href="#">Krevetės</a>
+                        <a class="dropdown-item" href="#">Sultiniai</a>
+                        <a class="dropdown-item" href="#">Pagardai, marinatai</a>
+                        <a class="dropdown-item" href="#">Linų sėmenų aliejus</a>
+
+                        <a class="dropdown-item" href="#">Brandinti fermentiniai sūriai</a>
+                        <a class="dropdown-item" href="#">Brandintas avies pieno sūris</a>
+                        <a class="dropdown-item" href="#">Avių pieno jogurtas</a>
+                        <a class="dropdown-item" href="#">Grikiai</a>
+                        <a class="dropdown-item" href="#">Sezoninės uogos ir daržvės</a>
+                        <a class="dropdown-item" href="#">Dovanų kuponas</a>
+                        <a class="dropdown-item" href="#">Grybai</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Receptai</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Straipsniai</a>
+                </li>
+                <a class="navbar-brand d-n-t" href="#">
+                    <img class="logo-png" src="img/zanapoliodvaras_logo_[png].png" alt="">
+                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Apie mus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kur įsigyti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fal fa-shopping-bag"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">EN</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End navigation -->
+
+    <!-- Header -->
+    <header id="slideshow">
+        <div class="slick">
+            <!-- Header slide/img content -->
+            <div class="landing-hero-butcher">
+                <div class="mid-img-title">
+                    <h1 class="header-title-big">make cupcake with love</h1>
+                    <h2 class="header-title-md">backed to be savoured made to be shared</h2>
+                    <p class="btn-box">
+                        <a class="button-restangle" href="">read more</a>
+                    </p>
+                </div>
+            </div>
+            <!-- End header slide/img content -->
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Who we are -->
+    <section class="container who-we-are">
+        <div class="row margin-for-row">
+            <!-- About us -->
+            <div class="col-xs-12 col-sm-6 padding-zero-at-tablet">
+                <h2 class="d-inline about-us-title-md">We are</h2>
+                <h1 class="d-inline about-us-title-big">zanapolio dvaras</h1>
+                <div class="stylish-line"></div>
+                <i class="quete fas fa-quote-left"></i>
+                <p class="about-us-p">
+                    É um facto estabelecido de que um leitor é distraído pelo conteúdo legível de uma página quando analisa a sua mancha gráfica. 
+                    Logo, o uso de Lorem Ipsum leva a uma distribuição mais ou menos normal de letras.
+                </p>
+                <p class="about-us-p">
+                    Ao contrário do uso de "Conteúdo aqui, conteúdo aqui", tornando-o texto legível.
+                </p>
+                <p class="about-us-p">
+                    Muitas ferramentas de publicação electrónica e editores de páginas web usam actualmente o Lorem Ipsum como o modelo de texto usado por omissão
+                </p>
+                <p class="d-inline">Subscribe for full access</p>
+                <a class="about-us-link" href=""><i class="d-inline about-us-arrow far fa-arrow-right"></i></a>
+                <div class="chairman-signature ml-auto d-md-none d-none">
+                    <!-- random signature -->
+                </div>
+                <h3 class="text-right chairman d-md-none d-none">zanapolio dvaras</h3>
+            </div>
+            <!-- End about us -->
+            <div class="col-xs-12 col-sm-6 mt-5 padding-1-at-tablet d-none">
+                <div class="about-us-img">
+                    <!-- img -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End who we are -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
