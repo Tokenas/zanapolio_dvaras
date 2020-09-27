@@ -23,6 +23,7 @@ body {
 .bg-light {
     background-color: #fcfbfa !important;
 }
+
 .navbar {
     padding: 1rem;
 }
@@ -53,15 +54,16 @@ body {
 
 .dropdown-menu {
     transition: all .25s ease-in-out !important;
-    background-color: #efede5;
+    background-color: #eee;
     border: 0;
     border-top: 1rem solid transparent;
+    border-bottom: 1rem solid transparent;
     top: 100%;
     border-radius: 0;
     padding: 0;
     margin: 0;
-    min-width: 250px;
-    max-width: 300px;
+    min-width: 300px;
+    max-width: 350px;
 }
 
 .dropdown-item {
@@ -69,8 +71,16 @@ body {
     font-size: .85em;
     font-weight: 500;
     line-height: 15px;
-    padding: .5rem 1rem;
+    padding: .6rem 1.5rem;
     text-transform: none !important;
+}
+
+.dropdown-item:first-child {
+    padding-top: 1.3rem;
+}
+
+.dropdown-item:last-child {
+    padding-bottom: 1.3rem;
 }
 
 .dropdown-item:focus {
@@ -96,6 +106,35 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 /* Logo responsive */
 @media (max-width:992px) {
+    .nav-item {
+        margin: auto 0;
+    }
+    .navbar .navbar-nav {
+        width: 100%;
+        border: 2px solid gold;
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        text-align: center;
+        min-width: 100%;
+        margin-top: .75rem;
+        margin-bottom: .75rem;
+        border-top: 0;
+        border-bottom: 0;
+    }
+
+    .dropdown-menu.show {
+        display: inline-block;
+        /* width: 100%; */
+    }
+
     .logo-desktop {
         display: block !important;
     }
@@ -301,6 +340,16 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     text-transform: uppercase;
 }
 /* End about us */
+.column-with-img:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 15%;
+    left: 32%;
+    width: 700px;
+    height: 457px;
+    background: #100f0a;
+}
 
 .about-us-img {
     margin-top: 60px;
@@ -310,7 +359,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     background-size: cover;
     width: 475px;
     height: 475px;
-    box-shadow: 240px -60px 0px 0px rgba(16, 15, 10, 1);
+    position: relative;
+    z-index: 9;
 }
 
 .mr {
@@ -318,6 +368,9 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 @media (max-width:991px) {
+    .column-with-img:after {
+        display: none;
+    }
 
     .about-us-p {
         margin-bottom: .5rem;
@@ -377,7 +430,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     }
 
     .stylish-line {
-        margin: .5rem 0;
+        margin: .5rem 0 1rem;
     }
 
     .quete {
