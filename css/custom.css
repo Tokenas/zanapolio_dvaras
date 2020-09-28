@@ -1,3 +1,11 @@
+/* Testing colors */
+:root {
+    --dark-green: #377D58;
+    --medium-green:#609080;
+    --dark-brown:#5A3433;
+    --medium-brown:#8B4839;
+}
+
 /* Important */
 .d-n {
     display: none;
@@ -344,10 +352,10 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     content: '';
     display: inline-block;
     position: absolute;
-    bottom: 15%;
+    bottom: 13%;
     left: 32%;
-    width: 700px;
-    height: 457px;
+    width: 500px;
+    height: 475px;
     background: #100f0a;
 }
 
@@ -357,7 +365,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     background-repeat: no-repeat;
     background-position: 10% top;
     background-size: cover;
-    width: 475px;
+    width: 505px;
     height: 475px;
     position: relative;
     z-index: 9;
@@ -438,3 +446,188 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     }
 }
 /* End who we are */
+
+/* Benefits */
+.benefits {
+    padding: 1rem;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    text-align: center;
+}
+.benefits-bg {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(to bottom, rgba(12, 9, 9, 0.5) 0%, rgba(12, 9, 9, 0.5) 100%), 
+    url(../img/max-delsid-oBwnHsjCx9A-unsplash.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center 64%;
+}
+
+.benefits-bg img {
+    padding-top: 2rem;
+    width: 24%;
+    height: auto;
+}
+
+.benefit-title {
+    padding-bottom: 2rem;
+    padding: 1.5rem;
+    color: #f2f2f2;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+/* end benefits */
+
+/* Special menu */
+.special-menu {
+    padding: 1rem;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.individual-special-menu-photo {
+    height: 410px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(32,42,46,.19);
+    
+}
+
+.individual-special-menu-photo > div:first-child {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .2s linear !important;
+}
+
+.special-menu-btn-cont {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.button-special-menu {
+    padding: 14px 19px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    align-items: center;
+    min-width: 120px;
+    box-shadow: 0 4px 8px 0 rgba(32,42,46,.04);
+    background-color: #fff;
+    color: #aa3c3b;
+    border: 1px solid #e4ebed;
+    transition: border-color .3s,background-color .3s cubic-bezier(.35,0,0,1);
+}
+
+.button-special-menu:hover {
+    color: #aa3c3b;
+    text-decoration: none;
+    border: 2px solid #aa3c3b;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+/* End special menu */
+
+/* Product */
+.product {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.individual-special-menu-photo {
+    height: 270px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(32,42,46,.19);
+}
+
+.individual-special-menu-photo > div:first-child {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all .2s linear !important;
+}
+
+@media (min-width: 768px) {
+    .individual-special-menu-item:first-child {
+        margin-bottom: 40px;
+    }
+}
+
+.individual-special-menu-item h4 {
+    margin: 0 0 0 1rem;
+    padding-top: .5rem;
+    font-weight: 700;
+    font-size: 16px;
+    color: #100f0a;
+}
+
+.individual-special-menu-item p {
+    margin: 0 0 0 1rem;
+    padding-top: .5rem;
+    font-weight: 500;
+    font-size: 16px;
+    color: #777;
+}
+
+.strong-p {
+    color: #100f0a;
+}
+
+.product-active {
+    color: #aa3c3b !important;
+    font-weight: 700 !important;
+}
+
+.product-img {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.product-img p {
+    padding: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #aa3c3b;
+    margin: 0;
+}
+
+.product-img img {
+    cursor: pointer;
+    width: 23%;
+    height: auto;
+}
+/* End product */
+
+/* Footer */
+.btm-foot {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.btm-foot img {
+    width: 20%;
+    height: auto;
+}
+
+.fifth-space {
+    
+}
+/* End footer */
