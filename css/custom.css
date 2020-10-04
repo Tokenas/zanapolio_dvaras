@@ -36,10 +36,6 @@ body {
     background-color: #fcfbfa !important;
 }
 
-.navbar {
-    padding: 1rem;
-}
-
 .nav-item {
     margin-top: auto;
     margin-bottom: auto;
@@ -99,6 +95,15 @@ body {
     background-color: #fcfbfa;
 }
 
+.language-icon {
+    width: 21px;
+    height: auto;
+}
+
+.shoping-cart {
+    font-size: 18px;
+}
+
 /* Remove default outline from dropdown link */
 a#navbarDropdown.nav-link.dropdown-toggle:active,
 a#navbarDropdown.nav-link.dropdown-toggle:focus {
@@ -107,6 +112,12 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 /* End remove default outline */
 
 /* Logo */
+.smaller {
+    margin: 0 .85rem;
+    height: auto !important;
+    width: 64px !important;
+}
+
 .navbar-brand {
     margin: 0 1rem;
 }
@@ -114,7 +125,9 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 .logo-png {
     width: 94px;
     height: auto;
+    transition:all cubic-bezier(0.0, 0.0, 0.58, 1.0) 0.25s;
 }
+
 
 /* Logo responsive */
 @media (max-width:991px) {
