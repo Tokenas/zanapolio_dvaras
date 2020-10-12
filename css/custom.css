@@ -10,7 +10,42 @@
     background-color: #eee;
 }
 
-/* Important */
+@media screen and (max-width: 1919px) and (min-width: 1200px) {
+    .container {
+        max-width: 1250px !important;
+    }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .container {
+        max-width: 1020px !important;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .container{
+        max-width: 765px !important;
+    }
+}
+
+.margin-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mt56px {
+    margin-top: 56px !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.px8px {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+}
+
 .d-n {
     display: none;
 }
@@ -52,7 +87,6 @@ body {
     height: 5px;
     opacity: 0;
     width: 0;
-    /* background-color: #ffcf9b; */
     display: inline-block;
     position: absolute;
     bottom: 8px;
@@ -85,16 +119,6 @@ body {
     line-height: 16px;
     text-transform: uppercase;
 }
-
-/* .nav-link {
-    transition: all .25s ease-in-out;
-    line-height: 60px;
-    border-bottom: 1px solid transparent;
-}
-
-.nav-link:hover {
-    border-color: #100f0a;
-} */
 
 .dropdown-menu a {
     transition: all .25s ease-in-out;
@@ -486,7 +510,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     text-transform: uppercase;
 }
 /* End about us */
-.column-with-img:after {
+/* .column-with-img:after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -495,7 +519,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     width: 500px;
     height: 475px;
     background: #100f0a;
-}
+} */
 
 .about-us-img {
     margin-top: 60px;
@@ -610,8 +634,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 /* end benefits */
 
 /* Special menu */
-.individual-special-menu-photo {
-    height: 410px;
+/* .individual-special-menu-photo {
+    height: 268px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -629,7 +653,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     background-position: center center;
     background-repeat: no-repeat;
     transition: all .2s linear !important;
-}
+} */
 
 /* .individual-special-menu-photo:hover > div:first-child {
     transform: scale(1.05);
@@ -650,17 +674,23 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     min-width: 120px;
     box-shadow: 0 4px 8px 0 rgba(32,42,46,.04);
     background-color: #fff;
-    color: #aa3c3b;
-    border: 1px solid #e4ebed;
+    border: 1px solid #bd1220;
+    color: #222;
+    border-radius: .1875rem;
     transition: border-color .3s,background-color .3s cubic-bezier(.35,0,0,1);
 }
 
+.button-special-menu i {
+    /* color: #222; */
+    vertical-align: -1px;
+    padding-left: 2px;
+}
+
 .button-special-menu:hover {
-    color: #aa3c3b;
+    background-color: #bd1220;
+    color: #fff;
+    border-color: #bd1220;
     text-decoration: none;
-    border: 2px solid #aa3c3b;
-    padding-left: 18px;
-    padding-right: 18px;
 }
 
 @media (max-width:767px) {
@@ -679,8 +709,9 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 /* End special menu */
 
 /* Product */
+
 .individual-special-menu-photo {
-    height: 270px;
+    height: 292px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -761,8 +792,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     visibility: hidden;
     z-index: 1;
     transition: all .15s ease-in-out;
-    border-bottom-left-radius: .4375rem;
-    border-bottom-right-radius: .4375rem;
+    border-bottom-left-radius: .1875rem;
+    border-bottom-right-radius: .1875rem;
 }
 
 .card {
@@ -772,14 +803,14 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 .product-card {
     transition: all .15s ease-in-out;
-    border-radius: .4375rem;
+    border-radius: .1875rem;
     background-color: #fff;
     border: 0;
 }
 
 .card-img, .card-img-top {
-    border-top-left-radius: calc(.4375rem - 1px);
-    border-top-right-radius: calc(.4375rem - 1px);
+    border-top-left-radius: calc(.1875rem - 1px);
+    border-top-right-radius: calc(.1875rem - 1px);
 }
 
 .btn-primary {
@@ -803,7 +834,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 .product-floating-btn > .btn {
     background-color: transparent;
-    border-radius: .4375rem;
+    border-radius: .1875rem;
 }
 
 @media (min-width: 992px) {
