@@ -66,7 +66,26 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.mb-40 {
+    margin-bottom: 4rem;
+}
+
+.pt-40 {
+    padding-top: 4rem;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
 /* Navigation */
+
 .dropdown-toggle::after {
     display: none;
 }
@@ -893,7 +912,22 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 
 /* Footer */
-.btm-foot {
+
+.textwidget img {
+    width: 65px;
+    height: auto;
+}
+
+.footer-widget .widget-title--2 {
+    color: #282828;
+    margin: 0 0 2rem;
+    padding-bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+    /* text-transform: uppercase; */
+    letter-spacing: 0;
+}
+/* .btm-foot {
     padding: 2rem;
     background-color: #100f0a;
     text-align: left;
@@ -999,5 +1033,5 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     .footer-space:nth-child(3) {
         margin-top: 1rem;
     }
-}
+} */
 /* End footer */
