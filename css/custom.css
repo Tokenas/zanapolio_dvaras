@@ -816,9 +816,11 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 .post-title a {
     color: #282828;
+    transition: all .25s ease-in-out;
 }
 .post-title a:hover {
     text-decoration: none;
+    color: #bd1220;
 }
 
 .post-meta {
