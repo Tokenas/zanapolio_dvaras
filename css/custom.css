@@ -823,6 +823,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 .post-meta {
     margin: 5px 0 10px;
+    width: 100%;
+    display: inline-block;
 }
 
 .post-meta span, .post-meta a {
