@@ -185,12 +185,16 @@ ul {
     margin-right: auto;
 }
 
+.nav-item:nth-child(1) {
+    
+}
+
 .nav-item:nth-child(3) {
-    margin-right: 7.5rem;
+    margin-right: 8.5rem;
 }
 
 .nav-item:nth-child(5) {
-    margin-left: 7.5rem;
+    margin-left: 8.5rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -270,8 +274,8 @@ ul {
 .nav-item {
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
     padding-right: .5rem;
     padding-left: .5rem;
 }
@@ -354,9 +358,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .navbar-brand {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: -13px;
+    margin: 0;
 }
 
 .logo-png {
@@ -442,6 +444,18 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 /* Header */
 /* Slick pack */
+
+/* outline */
+.slick-slide {
+    outline: none !important;
+}
+
+.slick-slide:focus {
+    outline: none !important;
+}
+
+/* End outline */
+
 .slick-dots {
     bottom: 1rem;
 }
