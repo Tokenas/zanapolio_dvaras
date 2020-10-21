@@ -74,11 +74,15 @@
     }
 
     .display-none-for-mobile {
-        display: none;
+        display: none !important;
     }
 
     .mbxs {
         margin-bottom: 0;
+    }
+
+    .mt56px {
+        margin-top: 30px;
     }
 }
 
@@ -100,7 +104,7 @@
 }
 
 .mt56px {
-    margin-top: 56px !important;
+    margin-top: 56px;
 }
 
 .text-left {
@@ -123,6 +127,14 @@
 @media (max-width:767px) {
     .d-n-m {
         display: none;
+    }
+
+    .pt40 {
+        padding-top: 40px !important;
+    }
+    
+    .pb40 {
+        padding-bottom: 40px !important;
     }
 }
 
@@ -665,8 +677,9 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 @media (max-width:767px) {
 
-    .slick-dots {
-        bottom: 3rem;
+    .transperant-benefits-bg {
+        width: 100%;
+        height: 100%;
     }
 
     .landing-hero-butcher-copy {
@@ -674,7 +687,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     }
 
     .landing-hero-butcher {
-        height: 75vh;
+        height: 71vh;
     }
 
     .mid-img-title {
@@ -685,14 +698,18 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
         transform: translate(-50%,-50%);
     }
     .header-title-big {
+        margin-top: 20px;
         font-size: 30px;
     }
 
     .header-title-md {
         font-size: 15px;
-        font-weight: 800;
+        line-height: 23px;
+        font-weight: 600;
         margin-left: 5%;
         margin-right: 5%;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
     .button-restangle {
         padding: .6rem 1.9rem !important;
@@ -875,9 +892,16 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 @media (max-width:767px) {
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+        height: 71vh;
+    }
+
     .container-custom-size  {
         margin-top: 40px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+        padding-bottom: 1px;
+        padding-top: 1px;
     }
 
     .margin-for-row {
@@ -1033,6 +1057,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 @media (max-width:767px) {
     .special-menu-btn-cont {
         padding-top: 1rem;
+        /* margin-bottom: 4px; */
     }
     .benefits-bg img {
         width: 40%;
