@@ -12,8 +12,10 @@ jQuery(document).ready(function() {
             jQuery('.navbar .dropdown').off('mouseover').off('mouseout');  
         }  
     }  
+
     toggleNavbarMethod();  
     jQuery(window).resize(toggleNavbarMethod);  
+    
   }); 
   
   function myFunction(x) {

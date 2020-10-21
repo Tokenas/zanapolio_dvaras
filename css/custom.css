@@ -98,6 +98,19 @@
     }
 }
 
+.recipe-btn {
+   padding: 12px 22px !important; 
+}
+
+.mt-34 {
+    margin-top: 34px !important;
+    margin-bottom: 10px !important;
+}
+
+.mt-48 {
+    margin-top: 48px !important;
+}
+
 .margin-0 {
     margin-left: 0;
     margin-right: 0;
@@ -161,7 +174,7 @@ body {
 }
 
 .mb-40 {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .pt-40 {
@@ -223,7 +236,7 @@ ul {
 /* Navigation */
 
 .bg-light {
-    background-color: #fcfbfa !important;
+    background-color: rgba(252, 251, 250, .9) !important;
 }
 
 .navbar-nav {
@@ -313,15 +326,12 @@ ul {
     }
 
     .dropdown-menu {
-        border-top: 3rem solid transparent !important;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        margin-left: -1rem;
+        border-top: 1.5rem solid transparent !important;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        margin-left: -1rem !important;
     }
 }
-
-
-
 
 .dropdown-item:focus {
     background-color: #fcfbfa;
@@ -362,8 +372,6 @@ ul {
 
 /*  */
 
-
-
 .nav-item {
     margin-top: auto;
     margin-bottom: auto;
@@ -382,6 +390,7 @@ ul {
 }
 
 .dropdown-menu {
+    /* rgba(252, 251, 250, 1) */
     background-color: #FCFBFA;
     border: 0;
     top: 100%;
@@ -421,9 +430,10 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 /* Logo */
 .smaller {
-    margin: 0 .85rem;
+    margin-top: 5px;
+    margin-left: 15px;
     height: auto !important;
-    width: 64px !important;
+    width: 46px !important;
 }
 
 .navbar-brand {
@@ -439,6 +449,16 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 /* Logo responsive */
 @media (max-width:991px) {
+
+    .dropdown-menu-card-icon-size {
+        display: inline-block;
+        width: 1rem;
+        margin-right: 10px;
+    }
+
+    .dropdown-menu-card-icon-size i {
+        font-size: 14px;
+    }
 
     .nav-item:nth-child(3) {
         margin-right: 0;
@@ -472,8 +492,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     }
 
     .dropdown-item {
-        padding-top: .75rem;
-        padding-bottom: .75rem;
+        padding-top: .55rem;
+        padding-bottom: .55rem;
     }
 
     .dropdown-menu {
@@ -492,33 +512,39 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
     .logo-desktop {
         display: block !important;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 15px !important;
+        margin-top: 5px !important;
     }
 }
 
 @media (max-width:767px) {
-    .navbar-toggler:focus, .navbar-toggler:hover {
-        text-decoration: none;
-        outline: 0;
-        outline: 0;
+
+    .navbar-brand {
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-toggler-icon {
+        margin: 0;
+        padding: 0;
     }
 
-    .navbar-toggler-icon {
-        margin-top: 10px;
+    .navbar-toggler {
+        margin-top: 5px;
+        margin-right: 15px !important;
+        margin: 0;
+        padding: 0;
     }
 
     .logo-png {
         width: 46px;
-    }
-
-    .smaller {
-        margin: 0 5px;
+        margin: 0;
+        padding: 0;
     }
 
     .navbar {
-        padding-bottom: 5px;
+        padding-bottom: 15px;
     }
+
     .navbar-nav .nav-item {
         padding-top: 0;
         padding-bottom: 0;
@@ -723,8 +749,9 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .button-restangle {
-    border: 1px solid #ffffff;
-    color: #fff;
+    border: 1px solid #f3bb30;
+    color: #100f0a;
+    background-color: #f3bb30;
     padding: 12px 22px;
     margin: 0;
     text-decoration: none;
@@ -733,15 +760,15 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     cursor: pointer;
     outline: none;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.7;
     border-radius: 5px;
     transition: all 0.4s ease-in-out;
 }
 
 .button-restangle:hover {
-    border-color: #f3bb30;
-    background: #f3bb30;
+    border-color: #f1b010;
+    background: #f1b010;
     color:#100f0a;
     text-decoration: none;
 }
@@ -943,7 +970,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .method-box-2 h4 {
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 0;
     line-height: 1.6;
@@ -955,19 +982,18 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     font-weight: 500;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 0;
 }
 
 .method-box-2 img {
-    width: 75px;
+    width: 55px;
     height: auto;
 }
 
 .individual-special-menu-photo {
+    border-radius: 5px;
     min-height: 190px;
     max-height: 247px;
-}
-
-.individual-special-menu-photo img {
     border-radius: 5px;
     width: 100%;
     height: 100%;
@@ -977,12 +1003,12 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .post-info {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: .75rem;
+    padding-right: 1rem;
 }
 
 .post-title {
-    padding: 4px;
+    font-weight: 700;
     font-size: 18px;
     line-height: 23px;
     margin: 1rem 0 .5rem 0;
@@ -1026,8 +1052,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .special-menu-btn-cont {
-    margin-top: 48px;
-    margin-bottom: 13px;
+    margin-top: 16px;
+    margin-bottom: -5px;
 }
 
 .button-special-menu {
@@ -1073,6 +1099,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 /* Product */
 
 .individual-special-menu-photo {
+    border-radius: 5px;
     height: 292px;
     width: 100%;
     overflow: hidden !important;
@@ -1101,7 +1128,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .individual-special-menu-item h4 {
-    margin: .9rem 0 0 1rem;
+    margin: .9rem 1rem 0 1rem;
     padding-top: .5rem;
     font-weight: 700;
     font-size: 18px;
@@ -1110,7 +1137,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .individual-special-menu-item p {
-    margin: 0 0 0 1rem;
+    margin: 0 1rem 0 1rem;
     padding-top: .5rem;
     font-weight: 500;
     font-size: 14px;
@@ -1149,9 +1176,9 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 .product-floating-btn {
     position: absolute;
     width: 100%;
-    bottom: -33px;
+    bottom: -23px;
     left: 0;
-    background-color:rgba(255, 255, 255, .85);
+    background-color:rgba(255, 255, 255, .92);
     opacity: 0;
     visibility: hidden;
     z-index: 1;
@@ -1209,6 +1236,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 
 .price-tag {
     font-size: 16px !important;
+    color: #100f0a !important;
 }
 
 @media (min-width: 992px) {
@@ -1233,11 +1261,11 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     }
 
     .individual-special-menu-item h4 {
-        margin: 0 0 0 .5rem;
+        margin: 0 .5rem 0 .5rem;
     }
 
     .individual-special-menu-item p {
-        margin: 0 0 0 .5rem;
+        margin: 0 .5 0 .5rem;
     }
 
     .special-menu-btn-cont {
@@ -1274,7 +1302,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .underline-logo-slogan {
-    margin-top: .5rem;
+    margin-top: .75rem;
     margin-left: 10%;
     margin-right: 10%;
     line-height: 18px;
@@ -1300,18 +1328,21 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     font-weight: 400;
     font-size: 14px;
     transition: all .25s ease-out;
+    text-decoration: none;
 }
+
 .footer-widget .widget-menu a:hover {
-    text-decoration: none;
-}
-
-.contact-info-footer li {
     text-decoration: underline;
-    transition: all .25s ease-in-out;
 }
 
-.contact-info-footer li:hover {
-    text-decoration: none;
+.fb-icon-size {
+    display: inline-block;
+    width: 1.1rem;
+}
+
+.fb-icon-size i {
+    font-size: 14px;
+    vertical-align: -1px;
 }
 
 .footer-widget .widget-title i{
@@ -1321,6 +1352,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 .newsletter-form--3 .newsletter-form__input {
+    border: 1px solid #999;
+    border-right: 0;
     padding-left: 10px;
     padding-left: 10px;
     width: 69%;
@@ -1355,6 +1388,7 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
     background-color: #F3BB30;
     font-size: 14px;
     line-height: 32px;
+    transition: all .25s ease-in-out;
 }
 
 .newsletter-form--3 .newsletter-form__submit:hover {
@@ -1365,8 +1399,8 @@ a#navbarDropdown.nav-link.dropdown-toggle:focus {
 }
 
 button:focus {
-    outline: .5px dotted;
-    outline: .5px auto #100f0a;
+    outline: 0;
+    outline: 0;
 }
 
 textarea:focus, input:focus{
@@ -1386,8 +1420,19 @@ textarea:focus, input:focus{
 }
 
 .copyright-text {
-    font-size: .85rem;
+    font-size: 14px;
     margin-bottom: 0;
+    color: #100f0a;
+}
+
+.copyright-text a {
+    font-size: 14px;
+    color: #100f0a;
+    transition: all .25s ease-in-out;
+}
+
+.copyright-text a:hover {
+    text-decoration: underline;
 }
 
 .copyright-text p {
