@@ -155,7 +155,7 @@
         </div>
         <div class="row product-holder p-0 margin-0">
             <!-- Product -->
-            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3 pl-0 padding-0-for-mobile">
+            <div class="col-xs-12 col-md-6 col-lg-4 col-xl-3 pl-0 padding-0-for-mobile mt-0">
                 <div class="card product-card">
                     <div class="individual-special-menu-item card">
                         <div class="individual-special-menu-photo">
@@ -312,7 +312,7 @@
         <div class="container pt40 pb40 plr-20px">
             <div class="row mlr-0">
                 <!-- About us -->
-                <div class="col-xs-12 col-sm-7 padding-zero-at-tablet">
+                <div class="col-xs-12 col-sm-7 col-md-6 padding-zero-at-tablet">
                     <h2 class="d-inline about-us-title-md">Apie mus</h2>
                     <div class="stylish-line"></div>
                     <p class="about-us-p">
@@ -333,7 +333,7 @@
                     <h3 class="text-right chairman display-none-for-mobile display-none">zanapolio dvaras</h3>
                 </div>
                 <!-- End about us -->
-                <div class="col-xs-12 col-sm-5 padding-1-at-tablet d-n-m column-with-img">
+                <div class="col-xs-12 col-sm-5 col-md-6 padding-1-at-tablet d-n-m column-with-img">
                     <div class="about-us-img">
                         <!-- img -->
                     </div>
@@ -378,12 +378,11 @@
                                     <span class="icon-size">
                                         <i class="fal fa-mortar-pestle"></i>
                                     </span>
-                                    4 porcijos</p>
+                                    4 porcijos
+                                </p>
                             </div>
-                            <div class="special-menu-btn-cont text-center mt-34">
-                                <a class="button-special-menu recipe-btn" href="#">
-                                    Skaityti daugiau
-                                </a>
+                            <div class="floating-recipe-btn">
+                                <button class="btn btn-primary btn-block" type="button" data-toggle="toast" data-target="#recipe-toast">Skaityti daugiau</button>
                             </div>
                         </div>
                     </div>
@@ -417,10 +416,8 @@
                                     </span>
                                     4 porcijos</p>
                             </div>
-                            <div class="special-menu-btn-cont text-center mt-34">
-                                <a class="button-special-menu recipe-btn" href="#">
-                                    Skaityti daugiau
-                                </a>
+                            <div class="floating-recipe-btn">
+                                <button class="btn btn-primary btn-block" type="button" data-toggle="toast" data-target="#recipe-toast">Skaityti daugiau</button>
                             </div>
                         </div>
                     </div>
@@ -454,10 +451,8 @@
                                     </span>
                                     4 porcijos</p>
                             </div>
-                            <div class="special-menu-btn-cont text-center mt-34">
-                                <a class="button-special-menu recipe-btn" href="#">
-                                    Skaityti daugiau
-                                </a>
+                            <div class="floating-recipe-btn">
+                                <button class="btn btn-primary btn-block" type="button" data-toggle="toast" data-target="#recipe-toast">Skaityti daugiau</button>
                             </div>
                         </div>
                         </div>
@@ -474,27 +469,30 @@
         <div class="container plr-20px">
             <div class="row mlr-0">
                 <div class="col-lg-3 col-md-6 mb-md--30 border-right mb-20px">
-                    <div class="method-box method-box-2 text-center border-bottom">
+                    <div class="method-box method-box-2 text-center">
                         <img src="img/svg/asse/sanitary.svg" alt="Icon">
                         <h4 class="mt20">Kokybė</h4>
                         <p>Zanapolio dvaro produktus augina kruopščiai atrinkti Lietuvos ūkininkai. 
                            Maistas auginamas ir paruošiamas švariai.</p>
                     </div>
+                    <div class="line-for-mobile"></div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-md--30 border-right mb-20px">
-                    <div class="method-box method-box-2 text-center border-bottom">
+                    <div class="method-box method-box-2 text-center">
                         <img src="img/svg/asse/satisfaction-guaranteed.svg" alt="Icon">
                         <h4 class="mt20">Šviežumas</h4>
                         <p>Ruošiame tik iš anksto užsakomą kiekį. 
                            Taip užtikriname, kad Jūsų šeimą pasieks šviežutėlis maistas.</p>
                     </div>
+                    <div class="line-for-mobile"></div>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-sm--30 border-right mb-20px">
-                    <div class="method-box method-box-2 text-center border-bottom">
+                    <div class="method-box method-box-2 text-center">
                         <img src="img/svg/asse/service.svg" alt="Icon" class="">
                         <h4 class="mt20">Atvirumas</h4>
                         <p>Dalyvaukite ekskursijose po Zanapolio dvaro produktų auginimo ūkius ir viską pamatykite savo akimis.</p>
                     </div>
+                    <div class="line-for-mobile"></div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="method-box method-box-2 text-center">
@@ -561,12 +559,16 @@
                     <div class="footer-widget">
                         <h3 class="widget-title widget-title--2 text-uppercase">Kontaktai</h3>
                         <ul class="widget-menu widget-menu--2">
-                            <li><a href="#">Kalvarijų g. 130, Vilnius</a></li>
-                            <li><a href="#">(8 5) 25 35 555</a></li>
-                            <li><a href="#">+370 656 55955</a></li>
-                            <li><a href="#">info@zanapoliodvaras.lt</a></li>
-                            <li><a href="https://www.facebook.com/">
-                                <div class="fb-icon-size"><i class="fab fa-facebook"></i></div> </i>Facebook</a></li>
+                            <li>
+                                <span class="footer-icon-size"><i class="far fa-map-marker-alt"></i></span><a href="#">Kalvarijų g. 130, Vilnius</a></li>
+                            <li>
+                                <span class="footer-icon-size"><i class="far fa-mobile"></i></span><a href="#">(8 5) 25 35 555</a></li>
+                            <li>
+                                <span class="footer-icon-size"><i class="fal fa-phone-rotary"></i></span><a href="#">+370 656 55955</a></li>
+                            <li>
+                                <span class="footer-icon-size"><i class="fal fa-envelope"></i></span><a href="#">info@zanapoliodvaras.lt</a></li>
+                            <li>
+                                <span class="footer-icon-size"><i class="fab fa-facebook"></i></span><a href="https://www.facebook.com/">Facebook</a></li>
                         </ul>
                     </div>
                 </div>
